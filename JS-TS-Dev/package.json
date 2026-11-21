@@ -1,15 +1,26 @@
 {
-  "name": "js-ts-assessment",
+  "name": "binaire-system-monitor",
   "version": "1.0.0",
-  "description": "Use this template for making the assessment for Freznel AI.",
+  "description": "Terminal system tasks and sensor viewer",
   "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "eslint.config.js",
+  "author": "Gagan Kumar",
+  "type": "module",
+  "main": "src/index.jsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsx src/index.jsx"
+  },
+  "dependencies": {
+    "firebase": "^13.4.0",
+    "ink": "^8.0.0",
+    "react": "^19.3.1",
+    "systeminformation": "^5.33.23"
   },
   "devDependencies": {
-    "frzdynamo": "^1.0.18"
+    "tsx": "^4.23.15"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "@firebase/util@1.15.3": true,
+    "protobufjs@7.6.6": true
   }
 }

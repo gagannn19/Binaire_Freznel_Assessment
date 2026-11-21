@@ -1,0 +1,38 @@
+import { makeGradient } from "../utils/gradient.js";
+
+export const theme = {
+  text: "#cfcfcf",
+  title: "#eeeeee",
+  hotkey: "#e05555",
+  dim: "#6b6b6b",
+  inactive: "#454545",
+  graphText: "#8a8a8a",
+  selectedBg: "#6a2f2f",
+  selectedFg: "#ffffff",
+  meterEmpty: "#2e2e2e",
+  divider: "#3a3a3a",
+  ok: "#7ccf8a",
+  error: "#ff6b6b",
+  warn: "#e6c35c",
+  box: {
+    cpu: "#3d7b46",
+    mem: "#8a882e",
+    net: "#423ba5",
+    proc: "#923535",
+    auth: "#3d7b46",
+    menu: "#5f5f5f",
+  },
+  gradient: {
+    cpu: makeGradient(["#77ca9b", "#cbc06c", "#dc4c4c"]),
+    temp: makeGradient(["#4897d4", "#5474e8", "#ff40b6"]),
+    used: makeGradient(["#592b26", "#d9626d", "#ff4769"]),
+    available: makeGradient(["#4e3f0e", "#d0d490", "#ffd77a"]),
+    cached: makeGradient(["#163350", "#74e6fc", "#26c5ff"]),
+    free: makeGradient(["#384f21", "#b5e685", "#dcff85"]),
+    swap: makeGradient(["#3b1f4d", "#a46bd6", "#e3a6ff"]),
+    download: makeGradient(["#291f75", "#4f43a3", "#b0a9de"]),
+    upload: makeGradient(["#620665", "#7d4180", "#dcafde"]),
+    process: makeGradient(["#80d0a3", "#dcd179", "#d45454"]),
+    io: makeGradient(["#163350", "#4f8fc9", "#9ad7ff"]),
+  },
+};
